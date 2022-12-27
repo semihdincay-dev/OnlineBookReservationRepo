@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LibraryAPI.Data\LibraryAPI.Data.csproj" />
+    <ProjectReference Include="..\LibraryAPI.DTOs\LibraryAPI.DTOs.csproj" />
+    <ProjectReference Include="..\LibraryAPI.Models\LibraryAPI.Models.csproj" />
+    <ProjectReference Include="..\LibraryAPI.Repositories\LibraryAPI.Repositories.csproj" />
+    <ProjectReference Include="..\LibraryAPI.Shared\LibraryAPI.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
