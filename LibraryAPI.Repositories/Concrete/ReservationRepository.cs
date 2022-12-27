@@ -111,7 +111,7 @@ namespace LibraryAPI.Repositories.Concrete
       updateReservation.BookId = entity.BookId;
       updateReservation.Book = entity.Book;
       updateReservation.ReserveDate = entity.ReserveDate;
-      updateReservation.ReturnDate = entity.ReturnDate;
+      updateReservation.ReturnDate = entity.ReserveDate.AddDays(7);
 
       await _context.SaveChangesAsync();
     }
